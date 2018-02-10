@@ -4,7 +4,7 @@ import { StyleSheet, Dimensions, Text, View, Modal, ActivityIndicator } from 're
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
-
+import PropType from 'prop-types';
 
 
 
@@ -33,10 +33,10 @@ EasyLoading.map = {};
 export class Loading extends React.Component {
 
     static propTypes = {
-        type: React.PropTypes.string,
-        color: React.PropTypes.string,
-        textStyle: React.PropTypes.any,
-        loadingStyle: React.PropTypes.any,
+        type: PropTypes.string,
+        color: PropTypes.string,
+        textStyle: PropTypes.any,
+        loadingStyle: PropTypes.any,
     };
 
     constructor(props) {
